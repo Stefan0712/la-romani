@@ -508,4 +508,8 @@ footer{
     .mobile-open-hours{
         display: flex;
     }
+    .carousel-image-list img{
+        width: 30%;
+        height: auto;
+    }
 }
