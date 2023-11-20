@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600;1,800&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>La Romani</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <img src="/imgs/temp-logo.png" alt="La Romani logo" id="nav-logo">
+        <div class="nav-links">
+            <a href="#hero" onClick="toggleMenu()">Acasă</a>
+            <a href="#business-hours" onClick="toggleMenu()">Program</a>
+            <a href="#location" onClick="toggleMenu()">Locatie</a>
+            <a href="#about" onClick="toggleMenu()">Despre</a>
+            <a href="#contact" onClick="toggleMenu()">Contact</a>
+        </div>
+        <div id="menu-btn" onClick="toggleMenu()"></div>
+    </nav>
+    <div id="hero" class="section">
+        <div class="background-hero-blur"></div>
+        <div class="hero-text">
+            <h2>Produse autentice importate din România</h2>
+            <a href="#location" id="header-btn">
+                <p>Vizit</p><p>ează-ne</p><p>acum!</p>
+            </a>
+        </div>
+    </div>
+    <h1 id="gallery-header">Galerie</h1>
+    <div id="gallery" class="section">
+        <div class="carousel-image-list">
+            <img src="./imgs/image1.jpg" alt="" id="img-list-0" class="focus-list"  onclick="handleListClick(0)">
+            <img src="./imgs/image2.jpg" alt="" id="img-list-1"  onclick="handleListClick(1)">
+            <img src="./imgs/image3.jpg" alt="" id="img-list-2"  onclick="handleListClick(2)">
+        </div>
+        <div class="carrousel-container">
+            <div class="carousel-slide">
+                <img class="carousel-image focus-img" src="./imgs/image1.jpg" alt="Image 1" id="img0">
+                <img class="carousel-image" src="./imgs/image2.jpg" alt="Image 2" id="img1">
+                <img class="carousel-image" src="./imgs/image3.jpg" alt="Image 3" id="img2">
+            </div>
+            <button class="prev-button" onclick="prevSlide()">&#10094;</button>
+            <button class="next-button" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+    <div id="about" class="section">
+        <div class="about-text">
+            <h1>Informații generale</h1>
+            <p>Salutăm cu căldură la magazinul La Romani, locul unde poți găsi produse autentice din România, precum mâncare și băuturi. Suntem o mică afacere locală situată în Cochem și suntem mândri să aducem bucatele și băuturile României mai aproape de tine.</p>
+
+            <p>Magazinul La Romani comercializeaza o gamă variată de produse, precum: </p>
+            <ul>
+                <li>Mezeluri</li>
+                <li>Băuturi</li>
+                <li>Dulciuri</li>
+                <li>Produse alimentare</li>
+                <li>Produse de panificație</li>
+                <li>Produse locale esențiale</li>
+            </ul>
+
+            <p>Pentru a recomanda produse, vă rugăm să ne contactați la datele de contact de mai jos.</p>
+            
+        </div>
+        <div class="about-image"></div>
+    </div>
+    <div id="location" class="section">
+       
+        <div class="map-container">
+            
+        <div class="business-hours-container">
+            <h1>Locatie</h1>
+            <div class="location-container">
+                <h3>Oberbachstr. 6 Cochem 56812</h3>
+            </div>
+            <h1>Program</h1>
+            <div class="business-hours-table" id="business-hours">
+
+                <div class="days">
+                    <p class="program-header">Ziua</p>
+                    <p>Luni</p>
+                    <p>Marti</p>
+                    <p>Miercuri</p>
+                    <p>Joi</p>
+                    <p>Vineri</p>
+                    <p>Sambata</p>
+                    <p>Duminica</p>
+                </div>
+                <div class="hours">
+                    <p class="program-header">Ora</p>
+                    <p>10:00 - 19:00</p>
+                    <p>Inchis</p>
+                    <p>10:00 - 19:00</p>
+                    <p>10:00 - 19:00</p>
+                    <p>11:00 - 20:00</p>
+                    <p>10:00 - 20:00</p>
+                    <p>10:00 - 19:00</p>
+                </div>
+                <div class="breaks">
+                    <p class="program-header">Pauza</p>
+                    <p>13:00 - 15:00</p>
+                    <p></p>
+                    <p>13:00 - 15:00</p>
+                    <p>13:00 - 15:00</p>
+                    <p>14:00 - 15:00</p>
+                    <p>14:00 - 15:00</p>
+                    <p>13:00 - 16:00</p>
+                </div>
+            </div>
+            <h1>Pauze</h1>
+            <div id="mobile-breaks">
+                <div class="days">
+                    <p class="program-header">Ziua</p>
+                    <p>Luni</p>
+                    <p>Marti</p>
+                    <p>Miercuri</p>
+                    <p>Joi</p>
+                    <p>Vineri</p>
+                    <p>Sambata</p>
+                    <p>Duminica</p>
+                </div>
+                
+                <div class="breaks mobile-open-hours">
+                    <p class="program-header">Pauza</p>
+                    <p>13:00 - 15:00</p>
+                    <p>Liber</p>
+                    <p>13:00 - 15:00</p>
+                    <p>13:00 - 15:00</p>
+                    <p>14:00 - 15:00</p>
+                    <p>14:00 - 15:00</p>
+                    <p>13:00 - 16:00</p>
+                </div>
+            </div>
+            <h1>Contact</h1>
+            <div class="contacts-container" id="contact">
+                <div class="contact-item">
+                    <img src="./imgs/facebook.png" alt="" class="icon">
+                    <a href="facebook.com">Facebook</a>
+                </div>
+                <div class="contact-item">
+                    <img src="./imgs/phone.png" alt="" class="icon">
+                   <p>+123 456 7890</p> 
+                </div>
+                <div class="contact-item">
+                    <img src="./imgs/email.png" alt="" class="icon">
+                    <p>email@example.com</p>
+                </div>
+            </div>
+        </div>
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=900&amp;height=500&amp;hl=en&amp;q=Oberbachstr.%206%20%20Cochem+(La%20Romani)&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer-text">Copyright 2023</div>
+        <div class="designer">Made by <a href="www.stefan.co.in">Stefan</a></div>
+    </footer>
+</body>
+</html>
