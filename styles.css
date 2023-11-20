@@ -445,12 +445,12 @@ footer{
         height: 50vh;
     }
     .carousel-image-list{
-        width: 90vw;
+        width: 95vw;
         height: 150px;
         flex-direction: row;
     }
     .carousel-image-list img{
-        width: 30%;
+        width: 25%;
         height: auto;
     }
 
