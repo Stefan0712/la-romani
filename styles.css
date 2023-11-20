@@ -445,9 +445,13 @@ footer{
         height: 50vh;
     }
     .carousel-image-list{
-        width: 95vw;
+        width: 90vw;
         height: 150px;
         flex-direction: row;
+    }
+    .carousel-image-list img{
+        width: 30%;
+        height: auto;
     }
 
     #about{
@@ -508,8 +512,5 @@ footer{
     .mobile-open-hours{
         display: flex;
     }
-    .carousel-image-list img{
-        width: 30%;
-        height: auto;
-    }
+    
 }
