@@ -451,7 +451,7 @@ footer{
     }
     .carousel-image-list img{
         width: 25%;
-        height: auto;
+        height: 100px;
     }
 
     #about{
