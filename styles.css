@@ -5,6 +5,9 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+body{
+    background-color: #F5F7F8;
+}
 @font-face {
     font-family: 'Gagalin';
     src: url('./imgs/Gagalin-Regular.otf') format('opentype'); 
@@ -493,7 +496,7 @@ footer{
         margin-left: 10%;
     }
     .mobile-only-header{
-        display: block;
+        display: flex !important;
     }
     #location{
         height: auto;
