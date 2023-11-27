@@ -233,6 +233,9 @@ nav{
     justify-content: center;
     
 }
+#about h1{
+    margin-bottom: 25px;
+}
 .about-content{
     height: 75%;
     width: 75%;
@@ -253,6 +256,10 @@ nav{
     justify-content: center;
     
    
+    
+}
+ul{
+    padding: 10px 0px 10px 25px;
     
 }
 .about-image{
