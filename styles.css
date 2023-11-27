@@ -60,7 +60,7 @@ nav{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image: url('./imgs/hero.jpg');
+    background-image: url('./imgs/hero.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
