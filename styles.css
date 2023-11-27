@@ -155,6 +155,7 @@ nav{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 25px;
 }
 
 .carousel-image-list{
@@ -231,10 +232,39 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     
 }
 #about h1{
     margin-bottom: 25px;
+}
+.header-title{
+    width: 90%;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.header-underline{
+    height: 5px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+.line-1{
+    background-color: #002A7B;
+}
+.line-2{
+    background-color: #F4CA15;
+}
+.line-3{
+    background-color: #C81025;
+}
+.header-underline div{
+    height: 5px;
+    width: calc(100% / 3);
 }
 .about-content{
     height: 75%;
@@ -243,10 +273,8 @@ nav{
     padding: 50px;
     gap: 10px;
     box-sizing: border-box;
-    border: 10px solid #002A7B; /* First border */
-    box-shadow:
-        0 0 0 10px #F4CA15, /* Second border */
-        0 0 0 20px #C81025; /* Third border */
+    background-color: white;
+    
 }
 .about-text{
     width: 70%;
