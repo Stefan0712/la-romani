@@ -62,13 +62,17 @@ nav{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image: url('./imgs/hero.webp');
+    background-image: url('./imgs/en-hero.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
     z-index: 1;
     
+}
+#hero-logo{
+    height: 200px;
+    max-width: 80%;
 }
 .background-hero-blur{
     position: absolute;
@@ -82,15 +86,15 @@ nav{
 }
 .hero-text{
     z-index: 3;
-    height: 75%;
-    width: 30%;
-    color: black;
+    height: 100%;
+    width: 100%;
+    color: white;
     gap: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
+    text-shadow: 1px 1px 3px black;
     
 }
 .hero-text h1{
@@ -103,12 +107,12 @@ nav{
 }
 #header-btn{
     display: flex;
-    width: 200px;
-    height: 50px;
+    width: 250px;
+    height: 75px;
+    border: 2px solid lightgray;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    border: 1px solid lightgray;
     margin-top: 50px;
     font-weight: bold;
     font-size: 1.2rem;
@@ -121,6 +125,9 @@ nav{
 }
 #header-btn p{
     transition: all 0.2s;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px white;
 }
 #header-btn:hover p:nth-child(1){
     color: #002A7B;
@@ -294,7 +301,27 @@ ul{
 .about-image{
     width: 30%;
     height: 100%;
-    background-color: lightgray;
+    background-image: url('./imgs/cochem.jpg');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.author{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(68, 68, 68, 0.418);
+    box-sizing: border-box;
+    padding: 3px 10px;
+    
+}
+.author a{
+    color: white;
+    text-decoration: none;
+}
+.author a:hover{
+    text-decoration: underline;
 }
 /*location section */
 .section-header{
@@ -438,6 +465,10 @@ footer{
     display: none !important;
 }
 @media only screen and (max-width: 768px) {
+    #hero-logo{
+        width: 80%;
+        height: auto;
+    }
     #mobile-breaks{
         display: flex;
     }
