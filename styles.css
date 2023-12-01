@@ -558,7 +558,9 @@ footer{
         flex: 0 0 auto;
         display: inline-block;
     }
-
+    #about{
+        height: auto;
+    }
     .about-content{
         height: auto;
         width: 100vw;
@@ -569,8 +571,8 @@ footer{
     }
 
     .about-image{
-        width: 80%;
-        height: 200px;
+        width: 90%;
+        height: 400px;
         margin-bottom: 25px;
     }
     .about-text{
@@ -655,6 +657,23 @@ footer{
     }
     .business-hours-container{
         width: 100%;
+    }
+    #about{
+        align-items: center;
+        justify-content: center;
+    }
+    .about-content{
+        width: 95vw;
+        height: auto;
+
+    }
+    .about-text{
+        width: 60%;
+        height: auto;
+        text-align: justify;
+    }
+    .about-image{
+        width: 40%;
     }
     .hero-text{
         width: 100%;
