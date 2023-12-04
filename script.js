@@ -171,3 +171,24 @@ const toggleMenu = () =>{
 
 
 
+
+
+
+//show nav after scrolling past the first couple pixels of the home
+window.addEventListener('scroll', function() {
+    const nav = document.getElementById('navbar');
+    const scrollPos = window.scrollY;
+
+    // Define the scroll position where you want the nav to appear
+    const showNavAfter = 300; 
+
+    // Toggle the 'hidden' class based on scroll position
+    if (scrollPos > showNavAfter) {
+      nav.classList.remove('hide-nav');
+    } else {
+      nav.classList.add('hide-nav');
+    }
+  });
+
+
+
