@@ -62,7 +62,7 @@ nav{
 }
 /* hero section */
 #hero{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -516,6 +516,7 @@ footer{
     .nav-links a{
         font-size: 1.2rem;
         transition: all 0.2s;
+        width: 100%;
     }
     .nav-links a:hover{
         background-color: rgba(211, 211, 211, 0.24);
@@ -526,7 +527,7 @@ footer{
         transition: all 0.2s;
     }
 
-   
+    
     .hero-text{
         width: 100vw;
         margin: 0;
@@ -541,6 +542,7 @@ footer{
 
     #hero{
         background-position: right;
+        
     }
     #gallery{
         height: auto;

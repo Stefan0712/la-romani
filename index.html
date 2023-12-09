@@ -23,7 +23,7 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="La Romani - Magazin cu produse autentice din România. Bucurați-vă de produse alimentare, dulciuri și mezeluri din România.">
+    <meta name="description" content="La Romani - Magazin romanesc cu produse autentice din România. Bucurați-vă de produse alimentare, dulciuri și mezeluri din România.">
     <title>Magazin La Romani - Produse Românești Autentice</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,14 +38,14 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <nav class="hide0nav" id="navbar">
+    <nav class="hide-nav" id="navbar">
         <img src="/imgs/temp-logo.png" alt="La Romani logo" id="nav-logo">
         <div class="nav-links">
-            <a href="#hero" title="Acasă - La Romani">Acasă</a>
-            <a href="#business-hours" title="Program - La Romani">Program</a>
-            <a href="#location" title="Locație - La Romani">Locație</a>
-            <a href="#about" title="Despre - La Romani">Despre</a>
-            <a href="#contact" title="Contact - La Romani">Contact</a>
+            <a href="#hero" title="Acasă - La Romani" onClick="toggleMenu">Acasă</a>
+            <a href="#business-hours" title="Program - La Romani" onClick="toggleMenu()">Program</a>
+            <a href="#location" title="Locație - La Romani" onClick="toggleMenu()">Locație</a>
+            <a href="#about" title="Despre - La Romani" onClick="toggleMenu()">Despre</a>
+            <a href="#contact" title="Contact - La Romani" onClick="toggleMenu()">Contact</a>
             <a href="./en.html"><img src="./imgs/en-logo.jpg"  class="language-icon"></a>
         </div>
         <div id="menu-btn" onClick="toggleMenu()"></div>
@@ -138,7 +138,7 @@
         <div class="business-hours-container">
             <h1>Locatie</h1>
             <div class="location-container">
-                <h3>Oberbachstr. 6 Cochem 56812</h3>
+                <a href="https://maps.app.goo.gl/xZjXFur9udExAWsX9"><h3>Oberbachstr. 6 Cochem 56812</h3></a>
             </div>
             <h1>Program</h1>
             <div class="business-hours-table" id="business-hours">
